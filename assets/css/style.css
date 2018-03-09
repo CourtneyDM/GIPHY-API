@@ -1,8 +1,80 @@
 * {
-    border: 1px dotted green;
+    /* border: 1px dotted green; */
+    margin: 5px;
+    
+}
+
+body > * {
+    border: 4px solid #0CF;
 }
 
 div {
     padding: 15%;
     color: rgb(0, 225, 255);
+}
+
+
+a:link, a:visited, a:hover {
+    text-decoration: none;
+}
+
+a:hover.fab {
+    font-size: 100px;
+}
+
+#heading{
+    color: #FFF;
+    font-family: "Monoton", cursive;
+    text-align: center;
+}
+
+#contact {
+    font-size: 50px;
+    color: grey;
+    background-color: #000;
+    text-align: center;
+}
+
+#content {
+    background-color: #000;
+    border: 4px solid #0CF;
+}
+
+#display-buttons,
+#form,
+#gifs {
+    background-color: #FFF;
+    /* border: 4px solid #0CF; */
+    padding: 5%;
+    text-align: center;
+}
+
+#form {
+    line-height: 20px;
+}
+
+#newItem {
+    color: grey;
+}
+
+button.gif {
+    margin: 10px;
+}
+
+#add-gif {
+    display: inline-block;
+    font-size: 12px;
+}
+
+footer {
+    background-color: #000;
+    color: #0CF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+footer > img {
+    width: 232px;
+    height: auto;    
 }

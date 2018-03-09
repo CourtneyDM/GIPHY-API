@@ -5,27 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+
+    <!-- Personal Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
-    <title>GIPHY Generator</title>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Include Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <title>GIPHY Grabber</title>
 </head>
 
 <body>
+    <header id="contact">
+        <a href="https://github.com/courtneydm">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/courtneydm">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="http://twitter.com/courtneydm_">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </header>
+
     <div id="content">
+        <h1 id="heading">GIPHY Grabber</h1>
         <div id="display-buttons"></div>
         <div id="form">
             <form>
-                <span>Enter you topic here:</span>
+                <span>Name your gif:</span>
                 <input type="text" name="topics" id="newItem">
                 <br>
-                <input type="button" id="add-gif" value="Add New Gif">
+                <br>
+                <input class="btn btn-primary btn-md" type="button" id="add-gif" value="Create New Gif">
             </form>
         </div>
         <div id="gifs"></div>
 
     </div>
+    <footer id="footer">Powered By
+        <img src="https://developers.giphy.com//static/img/dev-logo-lg.7404c00322a8.gif" />
+    </footer>
     <script type="text/javascript" src="assets/javascript/giphy.js"></script>
 </body>
 
