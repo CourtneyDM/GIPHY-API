@@ -1,0 +1,8 @@
+* {
+    border: 1px dotted green;
+}
+
+div {
+    padding: 15%;
+    color: rgb(0, 225, 255);
+}
