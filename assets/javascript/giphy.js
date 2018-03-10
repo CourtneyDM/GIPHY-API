@@ -35,7 +35,7 @@ $(document).ready(function () {
         var inputText = $(this).data("value"); // Get the text from input box
         var param1 = "&api_key="; // Parameter used to inlcude API key
         var param2 = "&limit=12"; // Paramater used to limit number of results returned
-        var giphyURL = "http://api.giphy.com/v1/gifs/search?q="; // URL for querying GIPHY's APIs
+        var giphyURL = "https://api.giphy.com/v1/gifs/search?q="; // URL for querying GIPHY's APIs
 
         // Set the query URL to include URL, API key, text value and all necessary parameters
         var queryURL = giphyURL + inputText + param1 + apiKey + param2;
