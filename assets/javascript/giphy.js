@@ -2,6 +2,8 @@ $(document).ready(function () {
     // Array to hold topics entered by user
     var topics = ["cars", "guitars", "trucks"];
 
+    changeFontColors();
+
     // Display buttons onto the screen
     displayButtons(topics);
 
@@ -92,7 +94,19 @@ $(document).ready(function () {
                 .text(newArray[i]);
             $("#display-buttons").append(btn);
         }
+        changeFontColors();
+    }
+
+    function changeFontColors() {
+        var r = Math.floor(Math.random() * 255);
+        var g = Math.floor(Math.random() * 255);
+        var b = Math.floor(Math.random() * 255);
+
+        $("h1").css("color", "rgb(" + r + "," + g + "," + b + ")");
+        $("span").css("color", "rgb(" + r + "," + g + "," + b + ")");
     }
     $(document).on("click", ".gif", displayGif);
+
+
 });
 
