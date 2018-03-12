@@ -1,11 +1,10 @@
 $(document).ready(function () {
+
     // Array to hold topics entered by user
     var topics = ["cars", "guitars", "trucks"];
 
-    // var enterKeyCode = 13;
-
+    // Execute function to change font color
     changeFontColors();
-
 
     // Display buttons onto the screen
     displayButtons(topics);
@@ -57,9 +56,13 @@ $(document).ready(function () {
             // Loop through the results and display gif image for each item
             for (var i = 0; i < gif.length; i++) {
 
+                // Create a variable to hold the still image
                 var still = gif[i].images.fixed_width_still.url;
+
+                // Create a variable to hold the animated image
                 var animate = gif[i].images.fixed_width.url;
 
+                // Create a new gif and apply the following attributes
                 var newGif = $("<img>")
                     .addClass("giphy")
                     .attr("src", still)
@@ -67,18 +70,21 @@ $(document).ready(function () {
                     .attr("data-still", still)
                     .attr("data-animate", animate);
 
+                // Add the new gif to the page
                 $("#gifs").append(newGif);
             }
 
-
+            // When the gif image is clicked...
             $(".giphy").on("click", function () {
                 var state = $(this).attr("data-state");
 
+                // If the image is still, change it to animate
                 if (state === "still") {
                     $(this).attr("src", $(this).data("animate"));
                     state = $(this).attr("data-state", "animate");
                 }
 
+                // If the image is animated, change it to still
                 if (state === "animate") {
                     $(this).attr("src", $(this).data("still"));
                     state = $(this).attr("data-state", "still");
@@ -87,7 +93,7 @@ $(document).ready(function () {
         });
     }
 
-    // Displays the buttons on the screen
+    // Displays the gif buttons on the screen
     function displayButtons(newArray) {
         $("#display-buttons").empty();
         for (var i = 0; i < newArray.length; i++) {
@@ -101,7 +107,7 @@ $(document).ready(function () {
         changeFontColors();
     }
 
-    // Change the font color every time the page loads or after a new button has generated
+    // Randomly Change the font color on page loads or after button generation
     function changeFontColors() {
         var r = Math.floor(Math.random() * 255);
         var g = Math.floor(Math.random() * 255);
