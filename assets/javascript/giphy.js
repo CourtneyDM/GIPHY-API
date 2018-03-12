@@ -2,13 +2,16 @@ $(document).ready(function () {
     // Array to hold topics entered by user
     var topics = ["cars", "guitars", "trucks"];
 
+    // var enterKeyCode = 13;
+
     changeFontColors();
+
 
     // Display buttons onto the screen
     displayButtons(topics);
 
     // Function that will run when user submits a new topic
-    $("#add-gif").on("click", function (e) {
+    $("#form").on("submit", function (e) {
         e.preventDefault();
 
         // Get the input value from the input box
