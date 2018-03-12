@@ -36,7 +36,7 @@ $(document).ready(function () {
         var apiKey = "fNct1kLAqG5QM1YdMbjB8WkWmUXnFb5Y"; //Generated API key from GIPHY
         var inputText = $(this).data("value"); // Get the text from input box
         var param1 = "&api_key="; // Parameter used to inlcude API key
-        var param2 = "&limit=12"; // Paramater used to limit number of results returned
+        var param2 = "&limit=10"; // Paramater used to limit number of results returned
         var giphyURL = "https://api.giphy.com/v1/gifs/search?q="; // URL for querying GIPHY's APIs
 
         // Set the query URL to include URL, API key, text value and all necessary parameters
