@@ -94,9 +94,11 @@ $(document).ready(function () {
                 .text(newArray[i]);
             $("#display-buttons").append(btn);
         }
+        $("#newItem").val("");
         changeFontColors();
     }
 
+    // Change the font color every time the page loads or after a new button has generated
     function changeFontColors() {
         var r = Math.floor(Math.random() * 255);
         var g = Math.floor(Math.random() * 255);
@@ -106,7 +108,5 @@ $(document).ready(function () {
         $("span").css("color", "rgb(" + r + "," + g + "," + b + ")");
     }
     $(document).on("click", ".gif", displayGif);
-
-
 });
 
