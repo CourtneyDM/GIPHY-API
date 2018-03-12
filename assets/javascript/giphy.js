@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // Array to hold topics entered by user
-    var topics = ["cars", "guitars", "trucks"];
+    var topics = ["James Bond", "Aston Martin", "80s"];
 
     // Execute function to change font color
     changeFontColors();
